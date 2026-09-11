@@ -263,7 +263,7 @@ useEffect(() => {
    */
   return (
     <main className=" bg-transparent  p-2">
-      <section className="mx-auto flex h-full w-full max-w-md flex-col overflow-hidden rounded-2xl bg-white shadow-2xl">
+      <section className="mx-auto flex  w-full max-w-md flex-col overflow-hidden rounded-2xl bg-white shadow-2xl">
 
         {/* Dodo Header */}
         <header className="shrink-0 bg-[#080808] px-6 py-4">
