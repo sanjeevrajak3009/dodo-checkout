@@ -262,7 +262,7 @@ useEffect(() => {
    * Checkout
    */
   return (
-    <main className=" bg-transparent  p-2">
+    <main className="h-fit bg-transparent  p-2">
       <section className="mx-auto flex  w-full max-w-md flex-col overflow-hidden rounded-2xl bg-white shadow-2xl">
 
         {/* Dodo Header */}
