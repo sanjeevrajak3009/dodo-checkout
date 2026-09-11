@@ -30,7 +30,7 @@ type CheckoutOptions = {
     onError?: (data: CheckoutError) => void;
 };
 
-const CHECKOUT_URL = "http://localhost:5173";
+const CHECKOUT_URL = "https://dodo-checkout-eta.vercel.app/";
 
 const CHECKOUT_ORIGIN =
     new URL(CHECKOUT_URL).origin;
