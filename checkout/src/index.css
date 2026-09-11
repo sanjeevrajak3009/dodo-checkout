@@ -3,21 +3,24 @@
 html,
 body,
 #root {
-  margin: 0;
-  padding: 0;
   width: 100%;
-  background: transparent;
+  height: 100%;
+  margin: 0;
 }
 
+html,
 body {
   overflow: hidden;
 }
 
-.hide-scrollbar {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+* {
+  box-sizing: border-box;
 }
 
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
+.checkout-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }

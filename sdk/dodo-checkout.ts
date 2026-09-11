@@ -127,27 +127,6 @@ function handleMessage(event: MessageEvent) {
 
             break;
         }
-        case "checkout.resize": {
-            const height = message.payload?.height;
-
-            if (
-                typeof height !== "number" ||
-                !Number.isFinite(height)
-            ) {
-                return;
-            }
-
-            const safeHeight = Math.min(
-                Math.max(height, 400),
-                window.innerHeight * 0.9
-            );
-
-            if (iframe) {
-                iframe.style.height = `${safeHeight}px`;
-            }
-
-            break;
-        }
 
         case "checkout.close": {
             const options = currentOptions;
@@ -231,8 +210,10 @@ function open(options: CheckoutOptions) {
     Object.assign(iframe.style, {
         width: "100%",
         maxWidth: "440px",
-        height: "500px",
-        
+        height: `${Math.min(
+        700,
+        Math.max(300, window.innerHeight - 32)
+        )}px`,
         border: "0",
         borderRadius: "16px",
         background: "white",
