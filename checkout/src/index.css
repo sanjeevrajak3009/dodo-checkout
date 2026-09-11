@@ -18,9 +18,16 @@ body {
 }
 
 .checkout-scroll {
-  flex: 1 1 auto;
   min-height: 0;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.checkout-scroll::-webkit-scrollbar {
+  display: none;
 }
