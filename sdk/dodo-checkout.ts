@@ -232,7 +232,7 @@ function open(options: CheckoutOptions) {
         width: "100%",
         maxWidth: "440px",
         height: "500px",
-        maxHeight: "calc(100vh - 32px)",
+        
         border: "0",
         borderRadius: "16px",
         background: "white",
